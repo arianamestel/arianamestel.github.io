@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -6,9 +7,9 @@ function classNames(...classes) {
 
 export const NavButton = ({ name, href, isActive, handleNavButtonClick }) => {
   return (
-    <a
+    <Link
       key={name}
-      href={href}
+      to={href}
       onClick={handleNavButtonClick}
       className={classNames(
         isActive
@@ -19,7 +20,7 @@ export const NavButton = ({ name, href, isActive, handleNavButtonClick }) => {
       aria-current={isActive ? "page" : undefined}
     >
       {name}
-    </a>
+    </Link>
   );
 };
 

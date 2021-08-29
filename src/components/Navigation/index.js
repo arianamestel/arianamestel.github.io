@@ -4,9 +4,9 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import NavButton from "./NavButton";
 
 const navigation = [
-  { name: "About me", href: "#" },
-  { name: "Resume", href: "#" },
-  { name: "Projects", href: "#" },
+  { name: "About me", href: "/" },
+  { name: "Resume", href: "/resume" },
+  { name: "Projects", href: "/projects" },
 ];
 
 export const NavBar = () => {

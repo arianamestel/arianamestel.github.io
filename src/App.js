@@ -1,11 +1,11 @@
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navigation";
+import Routes from "./Routes";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <NavBar />
-        <p>Ariana's portfolio</p>
-      </header>
+      <NavBar />
+      <Routes />
     </div>
   );
 }
