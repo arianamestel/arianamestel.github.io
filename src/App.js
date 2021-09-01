@@ -3,9 +3,11 @@ import Routes from "./Routes";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-200 h-screen">
       <NavBar />
-      <Routes />
+      <div className="my-auto">
+        <Routes />
+      </div>
     </div>
   );
 }
