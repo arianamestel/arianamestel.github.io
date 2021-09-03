@@ -3,23 +3,20 @@ import image from "../../assets/profilePic.png";
 
 export const AboutMe = () => {
   return (
-    <div className="container mx-auto">
-      <div className="flex">
-        <div className="flex-1">
-          <div className="font-mono text-purple-600">
-            <p className="text-3xl">
-              Hey there, I'm Ariana! <span className="text-4xl">👋🏼</span>
-            </p>
-            <p className="text-2xl">
-              I am a Software Engineer at CB Insights. I specialize in Front End
-              development.
-            </p>
-          </div>
+    <div className="bg-white w-screen py-8" id="aboutMe">
+      <div className="mx-auto w-5/6">
+        <div className="mx-auto w-48 mb-8">
+          <img className="rounded-full shadow-2xl" src={image} alt="Ariana" />
         </div>
-        <div className="flex-1">
-          <div className="m-auto w-2/3">
-            <img className="rounded-full shadow-2xl" src={image} alt="Ariana" />
-          </div>
+        <div className=" text-lg">
+          <p className="text-purple-600 text-xl">Hey there, I'm Ariana!</p>
+          <p>
+            I'm a New York based software engineer who specializes in building
+            exceptional UI. Currently, I am a full stack engineer at CB
+            Insights, focused on building groundbreaking features for our market
+            intellegence platform. In my free time I enjoy doing freelance web
+            development, cooking, and traveling.
+          </p>
         </div>
       </div>
     </div>

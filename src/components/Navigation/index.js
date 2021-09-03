@@ -4,15 +4,15 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import NavButton from "./NavButton";
 
 const navigation = [
-  { name: "About me", href: "/" },
-  { name: "Resume", href: "/resume" },
-  { name: "Projects", href: "/projects" },
+  { name: "About me", id: "aboutMe" },
+  { name: "Skills", id: "skills" },
+  { name: "Projects", id: "projects" },
 ];
 
 export const NavBar = () => {
   const [activeButton, setActiveButton] = useState(0);
   return (
-    <Disclosure as="nav" className="bg-gray-800 shadow-lgx sticky top-0">
+    <Disclosure as="nav" className="bg-gray-800 shadow-xl sticky top-0 ">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -29,7 +29,7 @@ export const NavBar = () => {
                 </Disclosure.Button>
               </div>
 
-              <div className="absolute inset-y-0 left-0 flex items-center text-white">
+              <div className="absolute inset-y-0 left-0 flex items-center text-white text-lg">
                 Ariana Mestel
               </div>
 

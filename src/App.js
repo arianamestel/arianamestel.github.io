@@ -1,13 +1,17 @@
 import NavBar from "./components/Navigation";
-import Routes from "./Routes";
+import AboutMe from "./containers/AboutMe";
+import Projects from "./containers/Projects";
+import Skills from "./containers/Skills";
+import StockImage from "./assets/background.jpg";
 
 function App() {
   return (
-    <div className="App bg-gray-200 h-screen">
+    <div className="App bg-gray-200 font-mono">
       <NavBar />
-      <div className="my-auto">
-        <Routes />
-      </div>
+      <img src={StockImage} alt="computer" className="w-screen" />
+      <AboutMe />
+      <Skills />
+      <Projects />
     </div>
   );
 }
