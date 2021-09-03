@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://arianamestel.github.io/portfolio",
+  "homepage": "http://arianamestel.github.io",
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "@headlessui/react": "^1.4.0",
