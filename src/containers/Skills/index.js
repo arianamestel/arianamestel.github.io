@@ -14,7 +14,7 @@ export const Skills = () => {
           for your business or you want to add a complex feature to your site, I
           am here to help! I am passionate about building responsive websites
           that can be easily viewed on phones, tablets, and desktops. No
-          business too big or too small - I enjoy working with them all!
+          business is too big or too small - I enjoy working with them all!
         </p>
       </div>
       <div>
