@@ -10,7 +10,10 @@ export const NavButton = ({ name, id, isActive, handleNavButtonClick }) => {
       key={name}
       onClick={() => {
         handleNavButtonClick();
-        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        const navBarOffset = 64;
+        const topOfElement =
+          document.getElementById(id).offsetTop - navBarOffset;
+        window.scroll({ top: topOfElement, behavior: "smooth" });
       }}
       className={classNames(
         isActive

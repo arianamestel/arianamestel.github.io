@@ -9,7 +9,7 @@ export const AboutMe = () => {
           <img className="rounded-full shadow-2xl" src={image} alt="Ariana" />
         </div>
         <div className=" text-lg">
-          <p className="text-purple-600 text-xl">Hey there, I'm Ariana!</p>
+          <p className="text-purple-600 text-2xl">Hey there, I'm Ariana!</p>
           <p>
             I'm a New York based software engineer who specializes in building
             exceptional UI. Currently, I am a full stack engineer at CB
