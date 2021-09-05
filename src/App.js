@@ -1,6 +1,7 @@
 import NavBar from "./components/Navigation";
 import AboutMe from "./containers/AboutMe";
 import Skills from "./containers/Skills";
+import Portfolio from "./containers/Portfolio";
 import Description from "./components/Description";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Description />
       <AboutMe />
       <Skills />
+      <Portfolio />
     </div>
   );
 }

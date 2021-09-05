@@ -6,7 +6,7 @@ import NavButton from "./NavButton";
 const navigation = [
   { name: "About me", id: "aboutMe" },
   { name: "Skills", id: "skills" },
-  { name: "Projects", id: "projects" },
+  { name: "Portfolio", id: "portfolio" },
 ];
 
 export const NavBar = () => {
