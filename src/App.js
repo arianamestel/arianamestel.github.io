@@ -3,6 +3,7 @@ import NavBar from "./components/Navigation";
 import AboutMe from "./containers/AboutMe";
 import Skills from "./containers/Skills";
 import Portfolio from "./containers/Portfolio";
+import Description from "./components/Description";
 
 const getDimensions = (ele) => {
   const boundClientRect = ele?.getBoundingClientRect();
@@ -69,6 +70,7 @@ export const App = () => {
         headerRef={headerRef}
         navigationSections={navigationSections}
       />
+      <Description />
       <AboutMe scrollRef={aboutMeRef} />
       <Skills scrollRef={skillsRef} />
       <Portfolio scrollRef={portfolioRef} />

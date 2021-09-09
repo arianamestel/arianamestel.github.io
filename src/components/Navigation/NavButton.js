@@ -6,21 +6,20 @@ function classNames(...classes) {
 
 export const NavButton = ({
   name,
-  id,
   isActive,
-  handleNavButtonClick,
+  handleNavButtonClick = () => {},
   isMobile = false,
+  scrollRef,
 }) => {
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a
       key={name}
       onClick={() => {
-        handleNavButtonClick();
-        const navBarOffset = isMobile ? 212 : 64;
-        const topOfElement =
-          document.getElementById(id).offsetTop - navBarOffset;
+        const navBarOffset = isMobile ? 211 : 63;
+        const topOfElement = scrollRef.current.offsetTop - navBarOffset;
         window.scroll({ top: topOfElement, behavior: "smooth" });
+        handleNavButtonClick();
       }}
       className={classNames(
         isActive

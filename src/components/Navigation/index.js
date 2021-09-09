@@ -14,7 +14,7 @@ export const NavBar = ({ visibleSection, headerRef, navigationSections }) => {
     <Disclosure as="nav" className="bg-gray-800 shadow-xl sticky top-0 z-10">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-6" ref={headerRef}>
+          <div className="mx-auto px-6 lg:px-10" ref={headerRef}>
             <div className="relative flex items-center justify-between h-16">
               {/* hamburger for mobile */}
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -57,7 +57,7 @@ export const NavBar = ({ visibleSection, headerRef, navigationSections }) => {
                         key={item.name}
                         {...item}
                         isActive={activeButton === item.name}
-                        handleNavButtonClick={() => setActiveButton(i)}
+                        scrollRef={item.ref}
                       />
                     ))}
                   </div>
@@ -74,8 +74,8 @@ export const NavBar = ({ visibleSection, headerRef, navigationSections }) => {
                     {...item}
                     isActive={activeButton === item.name}
                     isMobile
+                    scrollRef={item.ref}
                     handleNavButtonClick={() => {
-                      setActiveButton(i);
                       close();
                     }}
                   />
