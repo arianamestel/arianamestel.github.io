@@ -5,10 +5,10 @@ export const Description = () => {
   return (
     <div className="box-border">
       <div className="description mt-2 sm:mt-6 md:mt-8 text-bold">
-        <h1 className="text-3xl sm:text-5xl md:text-7xl text-purple-600 white-text-shadow">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl text-purple-600 gray-text-shadow">
           Ariana Mestel
         </h1>
-        <h3 className="text-2xl sm:text-4xl md:text-6xl text-white purple-text-shadow">
+        <h3 className="text-2xl sm:text-4xl md:text-6xl text-white gray-text-shadow">
           Web Developer
         </h3>
       </div>
