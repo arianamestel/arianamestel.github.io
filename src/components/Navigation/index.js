@@ -15,7 +15,7 @@ export const NavBar = () => {
     <Disclosure as="nav" className="bg-gray-800 shadow-xl sticky top-0 z-10">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="relative flex items-center justify-between h-16">
               {/* hamburger for mobile */}
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -30,7 +30,7 @@ export const NavBar = () => {
               </div>
 
               <div className="absolute inset-y-0 left-0 flex items-center text-white text-lg">
-                <span className="mr-3 text-2xl">AM</span>
+                <span className="mr-3">Ariana Mestel</span>
                 <a
                   href="https://github.com/arianamestel"
                   target="_blank"
@@ -68,7 +68,7 @@ export const NavBar = () => {
           </div>
           <Disclosure.Panel className="sm:hidden">
             {({ close }) => (
-              <div className="px-2 pt-2 pb-3 space-y-1">
+              <div className="px-6 pt-2 pb-3 space-y-1">
                 {navigation.map((item, i) => (
                   <NavButton
                     key={item.name}
