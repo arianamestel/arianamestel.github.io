@@ -30,7 +30,16 @@ export const NavBar = () => {
               </div>
 
               <div className="absolute inset-y-0 left-0 flex items-center text-white text-lg">
-                Ariana Mestel
+                <span className="mr-3 text-2xl">AM</span>
+                <a href="https://github.com/arianamestel">
+                  <i className="fab fa-github-square text-white mr-3 hover:text-purple-600 text-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ariana-mestel-b20425151/">
+                  <i className="fab fa-linkedin text-white mr-3 hover:text-purple-600 text-2xl"></i>
+                </a>
+                <a href="mailto:arianamestel@yahoo.com">
+                  <i className="fas fa-envelope-square text-white hover:text-purple-600 text-2xl"></i>
+                </a>
               </div>
 
               <div className="flex-1 flex items-center justify-end">
