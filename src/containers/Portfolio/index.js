@@ -10,10 +10,9 @@ export const Portfolio = () => {
         <PortfolioItem
           name="The Debate"
           description="The Debate is a blogging site for students to post articles and have
-          discussions around their opinions. The application includes user
+          discussions about interesting topics. The application includes user
           authentication and the ability to write, edit, and destroy
-          posts/comments created by the user while storing it all in a MongoDB
-          database."
+          posts or comments created by the user. The Debate was built using NodeJs, Express, EJS, HTML, CSS, and MongoDB."
           img={TheDebateImage}
           href="https://debate-blog.herokuapp.com/"
         />

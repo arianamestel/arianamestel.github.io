@@ -4,13 +4,20 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export const NavButton = ({ name, id, isActive, handleNavButtonClick }) => {
+export const NavButton = ({
+  name,
+  id,
+  isActive,
+  handleNavButtonClick,
+  isMobile = false,
+}) => {
   return (
-    <button
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
+    <a
       key={name}
       onClick={() => {
         handleNavButtonClick();
-        const navBarOffset = 64;
+        const navBarOffset = isMobile ? 212 : 64;
         const topOfElement =
           document.getElementById(id).offsetTop - navBarOffset;
         window.scroll({ top: topOfElement, behavior: "smooth" });
@@ -24,7 +31,7 @@ export const NavButton = ({ name, id, isActive, handleNavButtonClick }) => {
       aria-current={isActive ? "page" : undefined}
     >
       {name}
-    </button>
+    </a>
   );
 };
 

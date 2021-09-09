@@ -3,7 +3,7 @@ import React from "react";
 export const PortfolioItem = ({ href, name, img, description }) => {
   return (
     <>
-      <div className="w-4/5 m-auto pr-4">
+      <div className="w-4/5 m-auto">
         <div className="relative text-center">
           <a href={href} target="_blank" rel="noreferrer">
             <img
@@ -12,7 +12,7 @@ export const PortfolioItem = ({ href, name, img, description }) => {
               className="shadow-xl h-full	w-full relative block"
             />
             <div className="portfolioOverlay hover:opacity-100 flex">
-              <button className="m-auto bg-white hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded">
+              <button className="m-auto bg-white hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border-2 border-purple-500 hover:border-transparent rounded">
                 Visit site
               </button>
             </div>

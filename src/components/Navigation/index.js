@@ -50,16 +50,22 @@ export const NavBar = () => {
             </div>
           </div>
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item, i) => (
-                <NavButton
-                  key={item.name}
-                  {...item}
-                  isActive={activeButton === i}
-                  handleNavButtonClick={() => setActiveButton(i)}
-                />
-              ))}
-            </div>
+            {({ close }) => (
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                {navigation.map((item, i) => (
+                  <NavButton
+                    key={item.name}
+                    {...item}
+                    isActive={activeButton === i}
+                    isMobile
+                    handleNavButtonClick={() => {
+                      setActiveButton(i);
+                      close();
+                    }}
+                  />
+                ))}
+              </div>
+            )}
           </Disclosure.Panel>
         </>
       )}
