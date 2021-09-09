@@ -1,21 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import NavButton from "./NavButton";
 
-const navigation = [
-  { name: "About me", id: "aboutMe" },
-  { name: "Skills", id: "skills" },
-  { name: "Portfolio", id: "portfolio" },
-];
+export const NavBar = ({ visibleSection, headerRef, navigationSections }) => {
+  const [activeButton, setActiveButton] = useState("About Me");
 
-export const NavBar = () => {
-  const [activeButton, setActiveButton] = useState(0);
+  useEffect(() => {
+    if (visibleSection) setActiveButton(visibleSection);
+  }, [visibleSection]);
+
   return (
     <Disclosure as="nav" className="bg-gray-800 shadow-xl sticky top-0 z-10">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="max-w-7xl mx-auto px-6" ref={headerRef}>
             <div className="relative flex items-center justify-between h-16">
               {/* hamburger for mobile */}
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -53,11 +52,11 @@ export const NavBar = () => {
               <div className="flex-1 flex items-center justify-end">
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-3">
-                    {navigation.map((item, i) => (
+                    {navigationSections.map((item, i) => (
                       <NavButton
                         key={item.name}
                         {...item}
-                        isActive={activeButton === i}
+                        isActive={activeButton === item.name}
                         handleNavButtonClick={() => setActiveButton(i)}
                       />
                     ))}
@@ -68,12 +67,12 @@ export const NavBar = () => {
           </div>
           <Disclosure.Panel className="sm:hidden">
             {({ close }) => (
-              <div className="px-6 pt-2 pb-3 space-y-1">
-                {navigation.map((item, i) => (
+              <div className="px-6 pt-2 pb-3 space-y-1" ref={headerRef}>
+                {navigationSections.map((item, i) => (
                   <NavButton
                     key={item.name}
                     {...item}
-                    isActive={activeButton === i}
+                    isActive={activeButton === item.name}
                     isMobile
                     handleNavButtonClick={() => {
                       setActiveButton(i);

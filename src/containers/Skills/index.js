@@ -1,9 +1,9 @@
 import React from "react";
 import IconList from "../../components/IconList";
 
-export const Skills = () => {
+export const Skills = ({ scrollRef }) => {
   return (
-    <div id="skills" className="w-5/6 mx-auto my-8">
+    <div id="skills" className="w-5/6 mx-auto my-8" ref={scrollRef}>
       <div className="mb-10">
         <h1 className="text-4xl text-gray-800 text-center	mb-2">What I Do</h1>
         <p className="text-lg mx-auto">
