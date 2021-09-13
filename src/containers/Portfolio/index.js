@@ -1,7 +1,7 @@
 import React from "react";
 import PortfolioItem from "./PortfolioItem";
 import TheDebateImage from "../../assets/theDebateImage.png";
-import GoogleAPIImage from "../../assets/googleAPIIMage.png";
+import GoogleAPIImage from "../../assets/googleAPIImage.png";
 
 export const Portfolio = ({ scrollRef }) => {
   return (
