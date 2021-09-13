@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c227b228.chunk.css",
-    "main.js": "/static/js/main.95084125.chunk.js",
-    "main.js.map": "/static/js/main.95084125.chunk.js.map",
+    "main.js": "/static/js/main.a56cd9e5.chunk.js",
+    "main.js.map": "/static/js/main.a56cd9e5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.132d9a57.js",
     "runtime-main.js.map": "/static/js/runtime-main.132d9a57.js.map",
     "static/js/2.c240818a.chunk.js": "/static/js/2.c240818a.chunk.js",
@@ -15,7 +15,7 @@
     "static/media/background.3453d2c6.jpg": "/static/media/background.3453d2c6.jpg",
     "static/media/cssIcon.f7a3400b.png": "/static/media/cssIcon.f7a3400b.png",
     "static/media/gitIcon.140fa4d6.png": "/static/media/gitIcon.140fa4d6.png",
-    "static/media/googleAPIIMage.cf99545f.png": "/static/media/googleAPIIMage.cf99545f.png",
+    "static/media/googleAPIImage.08f7c43c.png": "/static/media/googleAPIImage.08f7c43c.png",
     "static/media/htmlIcon.ff3cf75e.png": "/static/media/htmlIcon.ff3cf75e.png",
     "static/media/jsIcon.5a908e0c.png": "/static/media/jsIcon.5a908e0c.png",
     "static/media/nodeJsIcon.85fedea5.png": "/static/media/nodeJsIcon.85fedea5.png",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.132d9a57.js",
     "static/js/2.c240818a.chunk.js",
     "static/css/main.c227b228.chunk.css",
-    "static/js/main.95084125.chunk.js"
+    "static/js/main.a56cd9e5.chunk.js"
   ]
 }
