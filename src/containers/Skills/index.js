@@ -10,11 +10,10 @@ export const Skills = ({ scrollRef }) => {
           <span className="text-purple-600 text-2xl mr-2">
             Website Development.
           </span>
-          Whether you're in need of a simple website to serve as a landing page
-          for your business or you want to add a complex feature to your site, I
-          am here to help! I am passionate about building responsive websites
-          that can be easily viewed on phones, tablets, and desktops. No
-          business is too big or too small - I enjoy working with them all!
+          Whether you need a simple website to serve as a landing page for your business 
+          or you want to add a complex feature to your site, I am here to help! I am 
+          passionate about building responsive websites that can be easily viewed on 
+          phones, tablets, and desktops. No business is too big or too small - I enjoy working with them all!
         </p>
       </div>
       <div>
